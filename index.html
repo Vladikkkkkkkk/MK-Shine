@@ -42,7 +42,7 @@
             </ul>
 
             <div class="hero-actions">
-                <a href="#contacts" class="btn-primary" data-lang="cta_btn">Call for a Free Quote!</a>
+                <button class="btn-primary open-modal-btn" data-lang="cta_btn">Call for a Free Quote!</button>
                 <div class="discount-badge">
                     <span class="discount-value">10%</span>
                     <span class="discount-text" data-lang="discount">OFF</span>
@@ -51,62 +51,39 @@
         </div>
     </section>
 
-    <section class="gallery" id="gallery">
-        <div class="container gallery-inner">
-            <h2 class="section-title" data-lang="gallery_title">Our Work</h2>
-            
-            <div class="works-grid">
-                
-                <div class="work-item">
-                    <div class="comparison-slider">
-                        <div class="image-wrapper after-image">
-                            <img src="assets/images/puff-after.jpg" alt="White Chair After Cleaning">
-                            <span class="label label-after" data-lang="label_after">AFTER</span>
-                        </div>
+   <section class="gallery" id="gallery">
+    <div class="container gallery-inner">
+        <h2 class="section-title" data-lang="gallery_title">Our Work</h2>
+        
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn" aria-label="Previous image">❮</button>
 
-                        <div class="image-wrapper before-image">
-                            <img src="assets/images/puff-before.jpg" alt="White Chair Before Cleaning">
-                            <span class="label label-before" data-lang="label_before">BEFORE</span>
-                        </div>
-                        
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
-                        
-                        <div class="slider-button">
-                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="7 8 3 12 7 16"></polyline>
-                                <line x1="3" y1="12" x2="21" y2="12"></line>
-                                <polyline points="17 8 21 12 17 16"></polyline>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="assets/images/carpet-before-after.jpg" alt="Carpet Cleaning Before and After" class="carousel-image">
+                    </li>
+                    
+                    <li class="carousel-slide">
+                        <img src="assets/images/sofa-before-after.jpg" alt="Sofa Cleaning Before and After" class="carousel-image">
+                    </li>
+                </ul>
+            </div>
 
-                <div class="work-item">
-                    <div class="comparison-slider">
-                        <div class="image-wrapper after-image">
-                            <img src="assets/images/couch-after.jpg" alt="Pink Sofa After Cleaning">
-                            <span class="label label-after" data-lang="label_after">AFTER</span>
-                        </div>
-                        <div class="image-wrapper before-image">
-                            <img src="assets/images/couch-before.jpg" alt="Pink Sofa Before Cleaning">
-                            <span class="label label-before" data-lang="label_before">BEFORE</span>
-                        </div>
-                        <input type="range" min="0" max="100" value="50" class="slider-input">
-                            <div class="slider-button">
-                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="7 8 3 12 7 16"></polyline>
-                                <line x1="3" y1="12" x2="21" y2="12"></line>
-                                <polyline points="17 8 21 12 17 16"></polyline>
-                            </svg>
-                            </div>
-                    </div>
-                </div>
-
-                </div>
-            
-            <p class="scan-text" data-lang="scan_text">Move the slider to see our work!</p>
+            <button class="carousel-btn next-btn" aria-label="Next image">❯</button>
         </div>
-    </section>
+        
+        <div class="carousel-nav">
+            <button class="carousel-indicator current-indicator"></button>
+            <button class="carousel-indicator"></button>
+        </div>
+        
+        <p class="scan-text" data-lang="swipe_text">Swipe to see more!</p>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+            <button class="btn-primary open-modal-btn" data-lang="cta_btn">Call for a Free Quote!</button>
+    </div>
+</section>
 
     <section class="contacts" id="contacts">
         <div class="container contacts-inner">
@@ -157,6 +134,60 @@
             </div>
         </div>
     </footer>
+
+   <div class="modal-overlay" id="quote-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">&times;</button>
+            
+            <div id="form-content">
+                <h3 class="modal-title" data-lang="modal_title">Not enough time? Get a free quote today!</h3>
+                
+                <form id="quote-form" class="quote-form" novalidate>
+                    <div class="input-group">
+                        <input type="text" id="name" data-lang="ph_name" placeholder="John Doe">
+                        <span class="error-msg" id="name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" data-lang="ph_email" placeholder="Enter your email">
+                        <span class="error-msg" id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" data-lang="ph_phone" placeholder="Enter your Phone">
+                        <span class="error-msg" id="phone-error"></span>
+                    </div>
+                    
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <span class="custom-select-trigger" id="service-trigger" data-lang="service_carpet">Carpet Cleaning</span>
+                            <div class="custom-options">
+                                <span class="custom-option selected" data-value="Carpet Cleaning" data-lang="service_carpet">Carpet Cleaning</span>
+                                <span class="custom-option" data-value="Pet Urine & Odor Removal" data-lang="service_pet">Pet Urine & Odor Removal</span>
+                                <span class="custom-option" data-value="Stain Removal Protection" data-lang="service_stain">Stain Removal Protection</span>
+                                <span class="custom-option" data-value="Tile & Grout Cleaning" data-lang="service_tile">Tile & Grout Cleaning</span>
+                                <span class="custom-option" data-value="Rug Cleaning" data-lang="service_rug">Rug Cleaning</span>
+                                <span class="custom-option" data-value="Upholstery Cleaning" data-lang="service_upholstery">Upholstery Cleaning</span>
+                                <span class="custom-option" data-value="Commercial Cleaning" data-lang="service_commercial">Commercial cleaning</span>
+                                <span class="custom-option" data-value="Other" data-lang="service_other">Other</span>
+                            </div>
+                        </div>
+                        <input type="hidden" id="service" value="Carpet Cleaning">
+                    </div>
+                    
+                    <div class="input-group">
+                        <textarea id="message" data-lang="ph_message" placeholder="When would you like us to contact you?" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary modal-submit" data-lang="modal_btn">Get a Free Quote</button>
+                </form>
+            </div>
+
+            <div id="success-content" class="success-content" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h3 data-lang="success_title">Thank You!</h3>
+                <p data-lang="success_text">Your request has been sent successfully. We will contact you shortly.</p>
+            </div>
+        </div>
+    </div>
 
     <div class="cookie-banner" id="cookie-banner">
         <p data-lang="cookie_text">We use cookies to ensure you get the best experience on our website.</p>
