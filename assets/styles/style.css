@@ -553,7 +553,7 @@ scroll-behavior:smooth;
 
 @media (max-width: 480px) {
     .header-inner {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
 }
@@ -564,7 +564,7 @@ scroll-behavior:smooth;
 }
 
 .logo-img {
-    height: 80px;         
+    height: 100px;         
     width: auto;          
     display: block;
     
@@ -585,13 +585,13 @@ scroll-behavior:smooth;
 
 @media (max-width: 768px) {
     .logo-img {
-        height: 60px; 
+        height: 70px; 
     }
 }
 
 @media (max-width: 480px) {
     .logo-img {
-        height: 50px; 
+        height: 70px; 
     }
 }
 
