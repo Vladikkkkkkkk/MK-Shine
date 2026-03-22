@@ -276,8 +276,7 @@ function validateForm() {
     return isValid;
 }
 
-const encodedToken = 'ODY0NDg3NjEyOTpBQUdGOXIyY2NqLUFGR1BSR3N3N0dNX3Qxa052ajlPWEJPMA==';
-const TELEGRAM_BOT_TOKEN = atob(encodedToken);
+const TELEGRAM_BOT_TOKEN = '8644876129:AAGF9r2ccj-AFGPRGsw7GM_t1kNvj9OXBO0';
 const TELEGRAM_CHAT_ID = '-5072209230';
 
 
