@@ -427,7 +427,7 @@ html {
 }
 
 .legal-links a:hover {
-    color: var(--accent-gold);
+    color: var(--accent-primary);
 }
 
 .cookie-banner {
