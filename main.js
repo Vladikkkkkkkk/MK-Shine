@@ -22,25 +22,30 @@ const translations = {
         cookie_accept: "Accept",
         cookie_decline: "Decline",
         modal_title: "Not enough time? Get a free quote today!",
-    ph_name: "John Doe",
-    ph_email: "Enter your email",
-    ph_phone: "Enter your Phone",
-    service_carpet: "Carpet Cleaning",
-    service_upholstery: "Upholstery Cleaning",
-    service_both: "Both",
-    ph_message: "When would you like us to contact you?",
-    modal_btn: "Get a Free Quote",
-    swipe_text: "Swipe to see more!",
-    service_carpet: "Carpet Cleaning",
-    service_pet: "Pet Urine & Odor Removal",
-    service_stain: "Stain Removal Protection",
-    service_tile: "Tile & Grout Cleaning",
-    service_rug: "Rug Cleaning",
-    service_upholstery: "Upholstery Cleaning",
-    service_commercial: "Commercial Cleaning",
-    service_other: "Other",
-    success_title: "Thank You!",
-    success_text: "Your request has been successfully sent. We will contact you shortly."
+        ph_name: "John Doe",
+        ph_email: "Enter your email",
+        ph_phone: "Enter your Phone",
+        service_carpet: "Carpet Cleaning",
+        service_upholstery: "Upholstery Cleaning",
+        service_both: "Both",
+        ph_message: "When would you like us to contact you?",
+        modal_btn: "Get a Free Quote",
+        swipe_text: "Swipe to see more!",
+        service_pet: "Pet Urine & Odor Removal",
+        service_stain: "Stain Removal Protection",
+        service_tile: "Tile & Grout Cleaning",
+        service_rug: "Rug Cleaning",
+        service_commercial: "Commercial Cleaning",
+        service_other: "Other",
+        success_title: "Thank You!",
+        success_text: "Your request has been successfully sent. We will contact you shortly.",
+        nav_phone: "(587) 566-9961",
+        full_address: "5189 Terwillegar Blvd NW, Edmonton, AB T6R 0S3",
+        media_title: "Our Process & Equipment",
+        reviews_title: "What Our Customers Say",
+        review_1_text: "Incredible work! Our couches and area rug look brand new. Igor was professional and fast. We highly recommend MK Shine.",
+        review_2_text: "Igor and his wife did an amazing job—such a great team. ❤️ Thank you!<br><br>The photo shows the carpet after they cleaned it. Before, there were oil stains from a garbage bag that leaked while I was taking it out. I was worried the stains wouldn’t come off and that management might charge us for the damage, but they were able to remove them completely. We’re very grateful for their hard work and attention to detail!",
+        review_3_text: "These people are amazing. Did a great job with our entire second floor plus stairs. We have 2 cats and a dog and accidents happen. They also did our area rug for a reasonable price. High recommended. They are a local small business and they pay attention to detail. Keep it up. Will book again next year for our maintenance."
     },
     fr: {
         hero_title: "Experts en nettoyage<br>de tapis et meubles",
@@ -65,25 +70,30 @@ const translations = {
         cookie_accept: "Accepter",
         cookie_decline: "Refuser",
         modal_title: "Pas assez de temps ? Obtenez un devis gratuit aujourd'hui !",
-    ph_name: "Jean Dupont",
-    ph_email: "Entrez votre e-mail",
-    ph_phone: "Entrez votre téléphone",
-    service_carpet: "Nettoyage de tapis",
-    service_upholstery: "Nettoyage de meubles",
-    service_both: "Les deux",
-    ph_message: "Quand souhaitez-vous que nous vous contactions ?",
-    modal_btn: "Obtenir un devis gratuit",
-    swipe_text: "Faites glisser pour en voir plus !",
-    service_carpet: "Nettoyage de tapis",
-    service_pet: "Élimination des odeurs et urine d'animaux",
-    service_stain: "Protection contre les taches",
-    service_tile: "Nettoyage de carrelage et joints",
-    service_rug: "Nettoyage de carpettes",
-    service_upholstery: "Nettoyage de meubles",
-    service_commercial: "Nettoyage commercial",
-    service_other: "Autre",
-    success_title: "Merci !",
-    success_text: "Votre demande a été envoyée avec succès. Nous vous contacterons sous peu."
+        ph_name: "Jean Dupont",
+        ph_email: "Entrez votre e-mail",
+        ph_phone: "Entrez votre téléphone",
+        service_carpet: "Nettoyage de tapis",
+        service_upholstery: "Nettoyage de meubles",
+        service_both: "Les deux",
+        ph_message: "Quand souhaitez-vous que nous vous contactions ?",
+        modal_btn: "Obtenir un devis gratuit",
+        swipe_text: "Faites glisser pour en voir plus !",
+        service_pet: "Élimination des odeurs et urine d'animaux",
+        service_stain: "Protection contre les taches",
+        service_tile: "Nettoyage de carrelage et joints",
+        service_rug: "Nettoyage de carpettes",
+        service_commercial: "Nettoyage commercial",
+        service_other: "Autre",
+        success_title: "Merci !",
+        success_text: "Votre demande a été envoyée avec succès. Nous vous contacterons sous peu.",
+        nav_phone: "(587) 566-9961",
+        full_address: "5189 Terwillegar Blvd NW, Edmonton, AB T6R 0S3",
+        media_title: "Notre processus et équipement",
+        reviews_title: "Ce que disent nos clients",
+        review_1_text: "Travail incroyable ! Nos canapés et notre tapis ont l'air neufs. Igor était professionnel et rapide. Nous recommandons vivement MK Shine.",
+        review_2_text: "Igor et sa femme ont fait un travail incroyable—une excellente équipe. ❤️ Merci !<br><br>La photo montre le tapis après leur nettoyage. Avant, il y avait des taches d'huile d'un sac poubelle qui fuyait pendant que je le sortais. J'avais peur que les taches ne partent pas et que la direction nous facture pour les dégâts, mais ils ont pu les enlever complètement. Nous leur sommes très reconnaissants pour leur travail acharné et leur souci du détail !",
+        review_3_text: "Ces gens sont incroyables. Ils ont fait un excellent travail pour tout notre deuxième étage et les escaliers. Nous avons 2 chats et un chien et des accidents arrivent. Ils ont également nettoyé notre tapis pour un prix raisonnable. Fortement recommandé. C'est une petite entreprise locale et ils font attention aux détails. Continuez comme ça. Nous réserverons à nouveau l'année prochaine pour notre entretien."
     }
 };
 
@@ -123,7 +133,12 @@ const dotsNav = document.querySelector('.carousel-nav');
 const dots = Array.from(dotsNav.children);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    const targetIndex = slides.findIndex(slide => slide === targetSlide);
+    
+    const currentSlideWidth = slides[0].getBoundingClientRect().width;
+    
+    track.style.transform = 'translateX(-' + (currentSlideWidth * targetIndex) + 'px)';
+    
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 }
@@ -133,11 +148,7 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current-indicator');
 }
 
-const slideWidth = slides[0].getBoundingClientRect().width;
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-};
-slides.forEach(setSlidePosition);
+
 
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
@@ -277,7 +288,7 @@ function validateForm() {
 }
 
 const TELEGRAM_BOT_TOKEN = '8644876129:AAGF9r2ccj-AFGPRGsw7GM_t1kNvj9OXBO0';
-const TELEGRAM_CHAT_ID = '-5072209230';
+const TELEGRAM_CHAT_ID = '-1003787865013';
 
 
 
