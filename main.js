@@ -287,7 +287,7 @@ function validateForm() {
     return isValid;
 }
 
-const TELEGRAM_BOT_TOKEN = '8644876129:AAGF9r2ccj-AFGPRGsw7GM_t1kNvj9OXBO0';
+const TELEGRAM_BOT_TOKEN = '8948964285:AAF8TFE-keSVa2MunxAYPGuTeNw2A2aEEk4';
 const TELEGRAM_CHAT_ID = '-1003787865013';
 
 
