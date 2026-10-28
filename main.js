@@ -287,11 +287,6 @@ function validateForm() {
     return isValid;
 }
 
-const TELEGRAM_BOT_TOKEN = '8644876129:AAGF9r2ccj-AFGPRGsw7GM_t1kNvj9OXBO0';
-const TELEGRAM_CHAT_ID = '-1003787865013';
-
-
-
 quoteForm.addEventListener('submit', async (e) => {
     e.preventDefault(); 
     
@@ -303,17 +298,6 @@ quoteForm.addEventListener('submit', async (e) => {
     const service = document.getElementById('service').value;
     const messageText = document.getElementById('message').value;
 
-    const text = `
-🔥 <b>New Lead from MK Shine!</b>
-
-👤 <b>Name:</b> ${name}
-📧 <b>Email:</b> ${email}
-📞 <b>Phone:</b> ${phone}
-🧽 <b>Service:</b> ${service}
-💬 <b>Message:</b> ${messageText ? messageText : 'No message provided'}
-    `;
-
-    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
     const submitBtn = quoteForm.querySelector('.modal-submit');
     const originalBtnText = submitBtn.innerText;
     
@@ -321,13 +305,15 @@ quoteForm.addEventListener('submit', async (e) => {
     submitBtn.disabled = true;
 
     try {
-        const response = await fetch(url, {
+        const response = await fetch('/api/send', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                chat_id: TELEGRAM_CHAT_ID,
-                text: text,
-                parse_mode: 'HTML'
+                name: name,
+                email: email,
+                phone: phone,
+                service: service,
+                message: messageText
             })
         });
 
