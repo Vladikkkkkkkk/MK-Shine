@@ -326,9 +326,20 @@ quoteForm.addEventListener('submit', async (e) => {
                 modal.classList.remove('active');
             }, 4000);
         } else {
-            alert("Oops! Something went wrong.");
+            let errorDetails = `Status ${response.status}`;
+            try {
+                const data = await response.json();
+                if (data && data.error) {
+                    errorDetails += `: ${data.error}`;
+                }
+            } catch (e) {
+                // Not JSON
+            }
+            console.error("Submission error:", errorDetails);
+            alert(`Oops! Something went wrong (${errorDetails}).`);
         }
     } catch (error) {
+        console.error("Network error:", error);
         alert("Network error. Please try again.");
     } finally {
         submitBtn.innerText = originalBtnText;
